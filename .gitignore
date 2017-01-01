@@ -30,3 +30,7 @@
 
 # CLion
 .idea/
+
+# Gradle
+.gradle/
+build/

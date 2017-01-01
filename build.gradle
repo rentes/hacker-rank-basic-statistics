@@ -1,0 +1,15 @@
+apply plugin: 'cpp'
+
+model {
+  components {
+    day0(NativeExecutableSpec) {
+      sources {
+        cpp {
+          source {
+            srcDir "src/day0/cpp"
+          }
+        }
+      }
+    }
+  }
+}
