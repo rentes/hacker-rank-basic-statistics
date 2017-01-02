@@ -9,9 +9,6 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
-#include <sstream>
-#include <vector>
-#include <algorithm>
-#include <limits>
+#include <map>
 using namespace std;
 #endif //HACKER_RANK_BASIC_STATISTICS_DAY0_H
