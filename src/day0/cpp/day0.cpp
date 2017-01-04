@@ -6,26 +6,24 @@
 int main(void) {
     // obtaining the number of elements from cin
     string number_of_elements_string = "";
-    unsigned int number_of_elements = 0;
     getline(cin, number_of_elements_string);
-    number_of_elements = atoi(number_of_elements_string.c_str());
+    int number_of_elements = atoi(number_of_elements_string.c_str());
 
     // putting all elements in a vector
     unsigned int n;
     vector<unsigned int> nums;
-    for(int i ; i < number_of_elements; ++i)
+    for(int i = 0 ; i < number_of_elements; ++i)
         if(cin >> n)
             nums.push_back(n);
 
     // calculating the mean
-    float mean = 0.0f;
     unsigned int sum = 0;
-    for(int i ; i < number_of_elements; ++i)
+    for(int i = 0 ; i < number_of_elements; ++i)
         sum += nums[i];
-    mean = (float) sum / number_of_elements;
+    float mean = (float) sum / number_of_elements;
 
     // calculating the median
-    float median = 0.0f;
+    float median;
     sort(nums.begin(), nums.end());
     if (number_of_elements % 2 == 0) {
         median = (float) (nums[(number_of_elements/2)-1] + nums[(number_of_elements/2)]) / 2;
@@ -37,7 +35,7 @@ int main(void) {
         mode = nums[1];
     else {
         map<unsigned int, unsigned int> num_occurrences;
-        for(int i ; i < number_of_elements; ++i) {
+        for(int i = 0 ; i < number_of_elements; ++i) {
             map<unsigned int, unsigned int>::iterator it = num_occurrences.find(nums[i]);
             if (it != num_occurrences.end()) {
                 num_occurrences[nums[i]]++;
