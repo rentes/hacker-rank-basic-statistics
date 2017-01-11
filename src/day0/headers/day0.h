@@ -4,11 +4,11 @@
 
 #ifndef HACKER_RANK_BASIC_STATISTICS_DAY0_H
 #define HACKER_RANK_BASIC_STATISTICS_DAY0_H
-#include <cmath>
+#include <string>
 #include <cstdio>
-#include <vector>
+#include <cstdlib>
 #include <iostream>
-#include <algorithm>
 #include <map>
+#include <vector>
 using namespace std;
 #endif //HACKER_RANK_BASIC_STATISTICS_DAY0_H
