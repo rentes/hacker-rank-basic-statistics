@@ -6,5 +6,8 @@
 #define HACKER_RANK_BASIC_STATISTICS_DAY1_H
 #include <cstdio>
 #include <cstdlib>
+#include <iostream>
+#include <vector>
+#include <math.h>
 using namespace std;
 #endif //HACKER_RANK_BASIC_STATISTICS_DAY1_H
