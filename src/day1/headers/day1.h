@@ -8,6 +8,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <vector>
-#include <math.h>
+#include <cmath>
+#include <algorithm>
 using namespace std;
 #endif //HACKER_RANK_BASIC_STATISTICS_DAY1_H
