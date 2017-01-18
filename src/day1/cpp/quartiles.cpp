@@ -18,9 +18,11 @@ int main(void) {
     // Q1
     float q1;
     if (number_elements % 2 == 0) {
-        q1 = (float) array[(number_elements/4)];
-    } else {
         if ((number_elements/2) %2 == 0)
+            q1 =  (float) (array[(number_elements/4)-1]+array[number_elements/4])/2;
+        else q1 = (float) array[number_elements/4];
+    } else {
+        if ((number_elements/2) % 2 == 0)
             q1 = (float) (array[(number_elements/4)-1] + array[number_elements/4])/2;
         else q1 = (float) array[number_elements/4];
     }
@@ -35,9 +37,11 @@ int main(void) {
     // Q3
     float q3;
     if (number_elements % 2 == 0) {
-        q3 = (float) array[(number_elements/2)+(number_elements/4)];
-    } else {
         if ((number_elements/2) %2 == 0)
+            q3 =  (float) (array[(number_elements/2)+(number_elements/4)-1] + array[(number_elements/2)+(number_elements/4)])/2;
+        else q3 = (float) array[(number_elements/2)+(number_elements/4)];
+    } else {
+        if ((number_elements/2) % 2 == 0)
             q3 = (float) (array[(number_elements/2)+(number_elements/4)] + array[(number_elements/2)+(number_elements/4)+1])/2;
         else q3 = (float) array[(number_elements/2)+(number_elements/4)+1];
     }
